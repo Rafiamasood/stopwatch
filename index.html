@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+        </style>
+</head>
+<body>
+
+    <div class="main">
+        <div class="container">
+                <div class="col">
+                    <div class="timer">
+                        <h1 id="min">00</h1>
+                        <span>:</span>
+                        <h1 id="sec">00</h1>
+                        <span>:</span>            
+                        <h1 id="ms">00</h1>
+                    </div>         
+
+                    <div class="timerbtn">
+                    <button id="stbtn"   onclick="start()"  type="button" class="btn btn-outline-secondary">Start</button>
+                    <button id ="stopbtn" onclick="stop()"  type="button" class="btn btn-outline-secondary">Stop</button>
+                    <button id ="rstbtn" onclick="reset()"  type="button" class="btn btn-outline-secondary">Reset</button>                  
+                    </div>                   
+                </div>                       
+        </div>
+
+
+         <div class="qoute">
+            <p> <q>The key is not in spending time, but in investing it.</q> </p>
+        </div>
+
+        <div class="footer">
+            <p class="footer-bottom-text">&copy; 2020 Copyright StopWatch by Rafia Masood</p>   
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
